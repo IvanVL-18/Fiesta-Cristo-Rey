@@ -34,7 +34,7 @@
 
   <link rel="preload" href="fonts/shrikhand-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/baloo-2-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/styles.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=3">
 
   <script type="application/ld+json">
   {
@@ -199,6 +199,27 @@
 <symbol id="i-gente" viewBox="0 0 24 24"><path d="M8.5 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm7 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 20c0-3.6 2.9-6.5 6.5-6.5S15 16.4 15 20zm14 0c0-2-.7-3.8-1.9-5.2.4-.1.9-.2 1.4-.2 3 0 5.5 2.4 5.5 5.4z" fill="currentColor"/></symbol>
 <symbol id="i-ruta" viewBox="0 0 24 24"><path d="M6 3a3 3 0 0 1 1 5.83V15a3 3 0 0 0 6 0V9a5 5 0 0 1 10 0v6.17A3 3 0 1 1 21 15V9a3 3 0 0 0-6 0v6a5 5 0 0 1-10 0V8.83A3 3 0 0 1 6 3z" fill="currentColor"/></symbol>
 <symbol id="i-regalo" viewBox="0 0 24 24"><path d="M20 7h-2.2A3 3 0 0 0 12 4.4 3 3 0 0 0 6.2 7H4a1 1 0 0 0-1 1v3h18V8a1 1 0 0 0-1-1zM9 7a1 1 0 1 1 1.7-.7L12 7zm6 0h-2.7l1.3-.7A1 1 0 1 1 15 7zM4 13v7a1 1 0 0 0 1 1h6v-8zm9 8h6a1 1 0 0 0 1-1v-7h-7z" fill="currentColor"/></symbol>
+<symbol id="i-rueda" viewBox="0 0 120 120"><g fill="none" stroke="#3B1A08" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M60 54L38 112M60 54L82 112M28 112h64"/>
+  <circle cx="60" cy="54" r="40"/>
+  <path d="M60 14v80M20 54h80M31.7 25.7l56.6 56.6M88.3 25.7L31.7 82.3"/>
+</g>
+<g stroke="#3B1A08" stroke-width="2.4"><rect x="94.0" y="54.0" width="12" height="10" rx="3" fill="#C8321E"/><rect x="82.3" y="82.3" width="12" height="10" rx="3" fill="#3F7D2C"/><rect x="54.0" y="94.0" width="12" height="10" rx="3" fill="#F5C33B"/><rect x="25.7" y="82.3" width="12" height="10" rx="3" fill="#66201E"/><rect x="14.0" y="54.0" width="12" height="10" rx="3" fill="#C8321E"/><rect x="25.7" y="25.7" width="12" height="10" rx="3" fill="#3F7D2C"/><rect x="54.0" y="14.0" width="12" height="10" rx="3" fill="#F5C33B"/><rect x="82.3" y="25.7" width="12" height="10" rx="3" fill="#AF6524"/></g>
+<circle cx="60" cy="54" r="6" fill="#AF6524" stroke="#3B1A08" stroke-width="2.4"/></symbol>
+<symbol id="i-chalupa" viewBox="0 0 120 120"><g stroke="#3B1A08" stroke-width="3" stroke-linejoin="round">
+  <ellipse cx="73" cy="45" rx="37" ry="19" fill="#D08A35"/>
+  <path d="M43 43c1-7 14-12 30-12s30 5 31 12c-1 7-15 11-31 11s-29-4-30-11z" fill="#3F7D2C"/>
+  <ellipse cx="49" cy="77" rx="42" ry="23" fill="#E6A548"/>
+  <path d="M14 75c2-10 17-16 35-16s34 6 35 16c-2 10-17 15-35 15s-33-5-35-15z" fill="#C8321E"/>
+</g>
+<g fill="#FFF7E8" stroke="#3B1A08" stroke-width="1.6" stroke-linejoin="round">
+  <path d="M28 70l7-2 2 6-7 2z"/><path d="M54 81l6-3 3 5-6 3z"/><path d="M65 67l6 1-1 6-6-1z"/>
+  <path d="M38 81l5 2-2 5-5-2z"/><path d="M82 40l6 1-1 5-6-1z"/><path d="M60 43l5-2 2 5-5 2z"/><path d="M72 47l5 1-1 5-5-1z"/>
+</g>
+<g fill="none" stroke="#FFF7E8" stroke-width="2.4">
+  <ellipse cx="45" cy="71" rx="6" ry="3.4"/><ellipse cx="70" cy="79" rx="5" ry="3"/><ellipse cx="91" cy="46" rx="5" ry="3"/>
+</g>
+<g stroke="#8BC34A" stroke-width="3" stroke-linecap="round"><path d="M22 79l8-3M57 71l7 2M76 72l6-4M47 86l6-1"/></g></symbol>
 </svg>
 
 <a class="saltar" href="#programa">Saltar al programa</a>
@@ -294,6 +315,23 @@
   </main>
 </div>
 
+<section class="feria" aria-labelledby="feria-titulo">
+  <div class="feria__arte" aria-hidden="true">
+    <div class="feria__sticker feria__sticker--1">
+      <svg class="feria__sello" viewBox="0 0 120 120"><use href="#i-sello"/></svg>
+      <svg class="feria__dibujo feria__rueda" viewBox="0 0 120 120"><use href="#i-rueda"/></svg>
+    </div>
+    <div class="feria__sticker feria__sticker--2">
+      <svg class="feria__sello" viewBox="0 0 120 120"><use href="#i-sello"/></svg>
+      <svg class="feria__dibujo" viewBox="0 0 120 120"><use href="#i-chalupa"/></svg>
+    </div>
+  </div>
+  <div>
+    <h2 class="feria__titulo" id="feria-titulo">Y las tres noches, feria</h2>
+    <p class="feria__texto">Viernes, sábado y domingo por la noche hay juegos mecánicos, antojitos y puestos de feria. Ven con hambre y con la familia.</p>
+  </div>
+</section>
+
 <section class="llegar" id="como-llegar" aria-labelledby="llegar-titulo">
   <h2 class="seccion__titulo" id="llegar-titulo">Cómo llegar</h2>
   <p class="llegar__texto">Todo es en Jagüey de Téllez, Hidalgo. Toca un lugar para abrirlo en Google Maps.</p>
@@ -319,7 +357,7 @@
 
 <p class="aviso" id="aviso" role="status" aria-live="polite"></p>
 
-<script src="js/programa.js?v=2" defer></script>
+<script src="js/programa.js?v=3" defer></script>
 <script src="js/app.js?v=2" defer></script>
 </body>
 </html>

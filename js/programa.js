@@ -11,6 +11,7 @@ window.FIESTA = {
     'Viernes 20: inauguración con mariachi y baile sonidero',
     'Sábado 21: cabalgata, rodeo infantil, fútbol y rodeo-baile',
     'Domingo 22: caravana trokera, misa, básquetbol y danza',
+    'Las tres noches: juegos mecánicos, antojitos y feria',
     'Domingo 8:30 p.m.: Marco Flores y la Banda Jerez'
   ],
 
