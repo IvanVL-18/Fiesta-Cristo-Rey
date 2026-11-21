@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fiesta de Cristo Rey 2026//Jaguey de Tellez//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:gran-bailazo-cristo-rey-2026@jaguey-de-tellez
+DTSTAMP:20261121T020000Z
+DTSTART:20261123T023000Z
+DTEND:20261123T083000Z
+SUMMARY:Marco Flores y la Banda Jerez en la Fiesta de Cristo Rey
+LOCATION:Explanada Principal\, Jagüey de Téllez\, Hidalgo
+DESCRIPTION:Gran Bailazo de Lujo de la Fiesta Patronal 2026 en honor a Cri
+ sto Rey. También: Dalia Sosa y su Ritmo Colombiano y Código Especial.
+URL:https://ivanvl-18.github.io/Fiesta-Cristo-Rey/
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Hoy a las 8:30 p.m.: Marco Flores y la Banda Jerez
+END:VALARM
+END:VEVENT
+END:VCALENDAR

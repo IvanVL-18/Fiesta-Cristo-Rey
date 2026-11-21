@@ -1,0 +1,15 @@
+{
+  "name": "Fiesta Patronal de Cristo Rey 2026",
+  "short_name": "Cristo Rey",
+  "description": "Programa de la Fiesta Patronal 2026 en honor a Cristo Rey en Jagüey de Téllez, Hidalgo.",
+  "lang": "es-MX",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F6E7C8",
+  "theme_color": "#7A1424",
+  "icons": [
+    { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
