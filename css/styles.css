@@ -446,21 +446,29 @@ svg { display: block; }
 /* ---------- Feria ---------- */
 
 .feria {
-  display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: center;
-  max-width: 732px; margin: 34px 14px 0; padding: 18px 18px 20px;
+  max-width: 732px; margin: 34px 14px 0; padding: 22px 18px 22px;
   background: var(--oro-claro);
   border: var(--borde); border-radius: 24px;
   box-shadow: 6px 7px 0 var(--vino);
+  text-align: center;
 }
-.feria__arte { display: grid; gap: 4px; }
-.feria__sticker { position: relative; width: 84px; height: 84px; }
-.feria__sticker--1 { rotate: -6deg; }
-.feria__sticker--2 { rotate: 7deg; margin-left: 14px; }
+.feria__arte { position: relative; width: min(64vw, 250px); margin: 0 auto 10px; }
+.rueda { width: 100%; height: auto; overflow: visible; }
+.feria__sticker { position: absolute; right: -34px; bottom: -4px; width: 92px; height: 92px; rotate: 9deg; }
 .feria__sello { position: absolute; inset: 0; width: 100%; height: 100%; fill: var(--crema); filter: drop-shadow(2px 3px 0 var(--cacao)); }
 .feria__dibujo { position: absolute; inset: 14%; width: 72%; height: 72%; }
-.feria__titulo { margin: 0; font: 400 clamp(1.6rem, 6.6vw, 2.1rem)/1.08 var(--display); color: var(--vino); text-shadow: .045em .045em 0 var(--crema); }
-.feria__texto { margin: 8px 0 0; font-weight: 700; line-height: 1.4; }
-@media (min-width: 790px) { .feria { margin-inline: auto; } .feria__arte { grid-auto-flow: column; } .feria__sticker { width: 100px; height: 100px; } .feria__sticker--2 { margin-left: 0; } }
+.feria__titulo { margin: 0; font: 400 clamp(1.7rem, 7.4vw, 2.4rem)/1.08 var(--display); color: var(--vino); text-shadow: .045em .045em 0 var(--crema); }
+.feria__texto { margin: 8px auto 0; max-width: 36ch; font-weight: 700; line-height: 1.4; }
+@media (prefers-reduced-motion: no-preference) {
+  .rueda__gira { transform-origin: 120px 112px; animation: girar 26s linear infinite; }
+  .rueda__cab { transform-box: fill-box; transform-origin: 50% 0; animation: girar 26s linear infinite reverse; }
+}
+@keyframes girar { to { transform: rotate(360deg); } }
+@media (min-width: 790px) {
+  .feria { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 54px; align-items: center; margin-inline: auto; padding: 26px 30px; text-align: left; }
+  .feria__arte { width: 250px; margin: 0; }
+  .feria__texto { margin-left: 0; }
+}
 
 /* ---------- Cómo llegar ---------- */
 
