@@ -65,7 +65,7 @@
           ${e.estelar ? '<a class="boleto__mas" href="#estelar">Ver la cuenta regresiva</a>' : ''}
           <div class="boleto__sticker" aria-hidden="true">
             <svg class="s-sello" viewBox="0 0 120 120"><use href="#i-sello"/></svg>
-            <svg class="s-dibujo" viewBox="0 0 120 120"><use href="#i-${e.icono}"/></svg>
+            ${e.foto ? `<img class="s-foto" src="${esc(e.foto)}" alt="" width="240" height="240" loading="lazy">` : `<svg class="s-dibujo" viewBox="0 0 120 120"><use href="#i-${e.icono}"/></svg>`}
           </div>
         </div>
       </article>`;

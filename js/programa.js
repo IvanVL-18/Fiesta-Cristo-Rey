@@ -161,6 +161,7 @@ window.FIESTA = {
       inicio: '2026-11-22T20:30:00-06:00', fin: '2026-11-23T02:30:00-06:00',
       hora: '8:30', ampm: 'p.m.',
       titulo: 'Gran Bailazo de Lujo', icono: 'microfono',
+      foto: 'img/marco-flores-cara.jpg',
       frase: 'Lo más estelar de la fiesta.',
       lugar: 'la Explanada Principal',
       datos: [
